@@ -1,0 +1,23 @@
+{
+    "name": "wychrist/congregatesetting",
+    "description": "",
+    "authors": [
+        {
+            "name": "Wychrist Developers",
+            "email": "developers@wychrist.org.au"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CongregateSetting\\": ""
+        }
+    }
+}

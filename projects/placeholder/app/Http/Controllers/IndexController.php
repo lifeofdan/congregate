@@ -11,10 +11,10 @@ class IndexController extends Controller
     public function indexAction()
     {
         $content = [
-            'title' => 'Wyreema Christians',
-            'subtitle' => 'Simply Christians - with a very long subtitle, does it look silly',
+            'title' => 'Wyreema Christians Inc.',
+            'subtitle' => 'Simply Christians meeting and worshipping in Wyreema',
             'intro' => 'intro string',
-            'content' => 'content for body of page',
+            'content' => '',
             'image' => '/assets/img/church.jpg',
             'images' => [
                 'first' => '',
@@ -24,8 +24,10 @@ class IndexController extends Controller
         $page =  new Page($content);
 
         $data = [
-            'page' => $page
+            'page' => $page,
+            'content' => $page
         ];
-        return render_template('templates/home_template', $data);
+
+        return render_template('home', $data);
     }
 }

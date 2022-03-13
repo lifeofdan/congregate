@@ -1,5 +1,7 @@
 <?php
 
+use App\Entity\Menu;
+use App\Entity\MenuItem;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PageController;
@@ -19,12 +21,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'indexAction'])->name('index');
 
-// Pages handler
-Route::get('/pages/{id}', [PageController::class, 'indexAction'])->name('pages');
-
-// Post handler
-Route::get('posts/{id}', [PostController::class, 'indexAction'])->name('posts');
-
 // contact us
 Route::get('/contact-us', [ContactController::class, 'indexAction'])->name('contact_us_form');
 Route::post('/contact-us', [ContactController::class, 'handleAction'])->name('contact_us_submitted');
+
+Route::get('/menu', function() {
+    $menu = require_once(app_root_dir('content/data/menus/home_menu.php'));
+    return $menu->toArray();
+});

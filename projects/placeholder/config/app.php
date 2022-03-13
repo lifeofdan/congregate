@@ -7,7 +7,11 @@ return [
         'youtube' => env('YOUTUBE_LINK'),
         'twitter' => env('TWITTER_LINK'),
         'github'  => env('GITHUB_LINK'),
+        'instagram'  => env('INSTAGRAM_LINK'),
+    ],
+    'contact' => [
         'email'   => env('EMAIL_ADDRESS'),
+        'phone'   => env('PHONE_NUMBER'),
     ],
     /*
     |--------------------------------------------------------------------------

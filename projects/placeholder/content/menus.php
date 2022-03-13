@@ -17,10 +17,10 @@ $menuItemsData = [
     'label' => 'Contact Us',
     'link' => '/contact-us',
     'children' => []
-  ]
+  ],
 ];
 
-foreach($menuItemsData as $key => $data) {
+foreach ($menuItemsData as $key => $data) {
   $menuItemsData[$key] = new MenuItem($data);
 }
 

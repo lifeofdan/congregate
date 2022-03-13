@@ -1,6 +1,49 @@
 <?php
 
 use Nwidart\Modules\Activators\FileActivator;
+use Nwidart\Modules\Commands\{
+    CommandMakeCommand,
+    ControllerMakeCommand,
+    DisableCommand,
+    DumpCommand,
+    EnableCommand,
+    EventMakeCommand,
+    JobMakeCommand,
+    ListenerMakeCommand,
+    MailMakeCommand,
+    MiddlewareMakeCommand,
+    NotificationMakeCommand,
+    ProviderMakeCommand,
+    RouteProviderMakeCommand,
+    InstallCommand,
+    ListCommand,
+    ModuleDeleteCommand,
+    ModuleMakeCommand,
+    FactoryMakeCommand,
+    PolicyMakeCommand,
+    RequestMakeCommand,
+    RuleMakeCommand,
+    MigrateCommand,
+    MigrateRefreshCommand,
+    MigrateResetCommand,
+    MigrateRollbackCommand,
+    MigrateStatusCommand,
+    MigrationMakeCommand,
+    ModelMakeCommand,
+    PublishCommand,
+    PublishConfigurationCommand,
+    PublishMigrationCommand,
+    PublishTranslationCommand,
+    SeedCommand,
+    SeedMakeCommand,
+    SetupCommand,
+    UnUseCommand,
+    UpdateCommand,
+    UseCommand,
+    ResourceMakeCommand,
+    TestMakeCommand,
+    LaravelModulesV6Migrator,
+};
 
 return [
 
@@ -210,10 +253,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'wychrist',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Wychrist Developers',
+            'email' => 'developer@wychrist.org.au',
         ],
     ],
 
